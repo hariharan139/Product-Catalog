@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+Product Catalog Web Page Documentation
+Project Overview
+The Product Catalog Web Page is a React.js application developed as part of an internship project. It showcases a product catalog where users can:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View a list of products.
+Filter products by category.
+View detailed information for each product on a separate page.
+The UI is styled with Tailwind CSS for a clean, responsive layout.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Technologies Used
+React.js: Library for building user interfaces.
+React Router: For routing and navigating between pages.
+Tailwind CSS: Utility-first CSS framework for styling.
+JavaScript: Programming language for client-side logic.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usage
+Viewing Products: All products are displayed on the main page. You can scroll through and view basic details for each product.
+Filtering Products: Use the dropdown filter to view products by category.
+Viewing Details: Click "View Details" on any product to navigate to its detail page, where additional information, including an image and description, is displayed.
 
-### `npm test`
+Features
+Product Listing: Displays all products in a grid layout.
+Product Filtering: Filter products by category for easier navigation.
+Detailed View: Each product has a dedicated page for in-depth information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Components
+1. App.js
+The main application component that sets up routing and initializes the product data.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. ProductList.js
+Displays a grid of products.
+Includes a filter dropdown for selecting categories.
+Renders each product card with basic information and a "View Details" button.
+3. ProductDetails.js
+Shows details for a single product, including the image, description, category, and price.
+Fetches the product by ID from the URL parameter.
